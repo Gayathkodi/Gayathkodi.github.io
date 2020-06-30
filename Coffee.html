@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="AboutMe">
+        <title>Gayath</title>
+        <link rel="stylesheet" href="Styles/Normalize.css">
+        <link rel="stylesheet" href="Styles/cof-styles.css"> 
+        <link rel="apple-touch-icon" sizes="180x180" href="Images/Home-Page/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Images/Home-Page/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Images/Home-Page/favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
+        <link rel="shortcut icon" href="Images/Home-Page/favicon.ico">
+        <meta name="msapplication-TileColor" content="#201a2c">
+        <meta name="msapplication-config" content="Images/Home-Page/browserconfig.xml">
+        <meta name="theme-color" content="#c0c8b3">
+    
+    </head>
+    
+<body> 
+    <nav id="mainpageNav">                            
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="Qualifications.html">QUALIFICATIONS</a>
+            <div class="dropdown">
+                <div class="dropbtn"><a href="Skills.html">SKILLS</a></div>
+                <div class="dropdown-content">
+                    <a href="Cloud-V1.html">CSS 1</a>
+                    <a href="Cloud-V2.html">CSS 2</a>
+                    <a href="Coffee.html">COFFEE</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <script src="Scripts/Navigation-Bar.js"></script> 
+
+ 
+        <div class="slideshow-container">
+                
+            <div class="container4 fade">
+                <div class="numbertext">
+                    <div class="left">
+                            <img src="Images/Coffee-Page/coffeep1.webp" alt="coffeebanner1"/>
+                    </div>
+                
+                    <div class="right">                                   
+                            <p>
+                               "<b>Coffee</b> First. <b>Schemes</b> Later"
+                            </p>
+
+                            <h4>
+                                - Leanna Renee Hieber
+                            </h4>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="container4 fade">
+                <div class="numbertext">
+                    <div class="left">
+                        <img src="Images/Coffee-Page/coffeep2.webp" alt="coffeebanner2"/>
+                    </div>
+                
+                    <div class="right">                                   
+                        <p>
+                            Life <b>Begins</b> After <b>Coffee</b>                 
+                        </p>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="bullets">
+                <span class="dot" onclick="currentSSlide(1)"></span> 
+                <span class="dot" onclick="currentSSlide(2)"></span>                                     
+            </div>
+                   
+            <div class="box"></div>
+            
+            <a class="prev" onclick="plusSSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSSlides(1)">&#10095;</a>      
+        </div>            
+            <script src="Scripts/Coffee-Page/Coffee-Image-Slider.js"></script>
+
+
+
+            <div class="container">
+                <!--==========================================================BEGINNING OF SHOPPING ITEMS========================================================-->
+                <div class="row">
+                    <!--=================================================BEGINNING OF FAVOURITE COFFEE================================================-->
+                    <div class="favourtie_title">
+                        <h1>FAVOURITE COFFEE</h1>
+                    </div>
+                    <div class="coffee_type_select">
+                        <div class="latte">
+                            <div class="milk_info">
+                                <img class="simage" src="Images/Coffee-Page/latte.png" alt="latte">
+                                <input name="drinktype" value="LATTE" type="radio" onclick="drinkchoice(0)" checked id="LATTE"/>  
+                                <div class="milk_title">
+                                    <h1>LATTE</h1>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="cappuchino">
+                            <div class="milk_info">
+                                <img class="simage" src="Images/Coffee-Page/cappuchino.png" alt="cappuchino">
+                                <input name="drinktype" value="CAPPUCHINO" type="radio" onclick="drinkchoice(0)" id="CAPPUCHINO"/>
+                                <div class="milk_title">
+                                    <h1>CAPPUCHINO</h1>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="flatwhite">
+                            <div class="milk_info">
+                                <img class="simage" src="Images/Coffee-Page/fwhite.png" alt="fwhite">
+                                <input name="drinktype" value="FLAT_WHITE" type="radio" onclick="drinkchoice(0)" id="FLAT_WHITE"/>
+                                <div class="milk_title">
+                                    <h1>FLAT WHITE</h1>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="espresso">
+                            <div class="milk_info">
+                                <img class="simage" src="Images/Coffee-Page/espresso.png" alt="espresso">
+                                <input name="drinktype" value="ESPRESSO" type="radio" onclick="drinkchoice(1)" id="ESPRESSO"/>
+                                <div class="milk_title">
+                                    <h1>ESPRESSO</h1>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="americano">
+                            <div class="milk_info">
+                                <img class="simage" src="Images/Coffee-Page/americano.png" alt="americano">
+                                <input name="drinktype" value="AMERICANO" type="radio" onclick="drinkchoice(1)" id="AMERICANO"/>
+                                <div class="milk_title">
+                                    <h1>AMERICANO</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--====================================================END OF FAVOURITE COFFEE===================================================-->
+    
+    
+                    <!--===============================================BEGINNING OF FAVOURITE SIZE==========================================-->
+                    <div class="second_section">
+                        <div class="favourtie_title">
+                            <h3>FAVOURITE SIZE</h3>
+                        </div>
+                        <select id="cup_size">
+                            <option value="SMALL" >SMALL</option>
+                            <option value="MEDIUM" selected="">MEDIUM</option>
+                            <option value="LARGE">LARGE</option>
+                        </select>
+                    <!--=============================================END OF FAVOURITE SIZE===================================================-->
+    
+                       
+                        <!--=================================================BEGINNING OF FAVOURITE MILK================================================-->
+                        
+                        <div id="milk_type">
+                            <div class="favourtie_title">
+                                <h3>FAVOURITE MILK</h3>
+                            </div>
+                            <select id="milk_choice">
+                                <option value="WHOLE">WHOLE</option>
+                                <option value="SKIMMED">SKIMMED</option>
+                                <option value="SEMI-SKIMMED" selected="">SEMI-SKIMMED</option>
+                                <option value="COCONUT">COCONUT</option>
+                                <option value="SOYA">SOYA</option>
+                            </select>
+                        </div>
+                        <!--====================================================END OF FAVOURITE MILK===================================================-->
+    
+                        
+                        <!--=================================================BEGINNING OF FAVOURITE TOPPING================================================-->
+                        <div class="favourtie_title">
+                            <h3>FAVOURITE TOPPING</h3>
+                        </div>
+                        <select id="topping_type">
+                            <option value="SUGAR" selected="">SUGAR</option>
+                            <option value="CREAM">CREAM</option>
+                            <option value="BOTH">BOTH</option>
+                        </select>
+                        
+                        <div class="favourtie_title">
+                            <h3>NUMBER OF SHOTS</h3>
+                        </div>
+                        <input class="per_shots" type="number" id="number_of_shots" min="0" value="0">
+                        <!--====================================================END OF FAVOURITE TOPPING===================================================-->
+    
+                        <div class="main_button">
+                            <button class="add_to_cart" type="button" id="add_to_cart_button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <!--==========================================================BEGINNING OF SHOPPING ITEMS========================================================-->
+    
+                
+    
+                <!--=========================================================BEGINNING OF ADD TO CART ITEMS======================================================-->
+                <div class="cart_container">
+                    <h1>CART</h1>
+                    <div class="cart_row">
+                        <div class="cart_item">
+                            <div class="cart_header">
+                                <div class="cart_column">
+                                    ITEM
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="cart_price">
+                            <div class="cart_header">
+                                <div class="cart_column">
+                                    PRICE
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="cart_quantity">
+                            <div class="cart_header">
+                                <div class="cart_column">
+                                    QUANTITY
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="cart_items"></div>
+                    
+                    <div class="cart_total">
+                        <strong class="cart_total_title">Total</strong>
+                        <span class="cart_total_price">0.00 LKR</span>
+                    </div>
+    
+                    <div class="finalbuttons">
+                            
+
+                            <div class="main_button1">
+                                <button class="add_to_fav" type="button" id="add_fav">Add To Favourites</button>
+                            </div>
+                        <div class="buttonreverse">
+                            <div class="main_button">
+                                <button class="place_order" type="button" id="place_order_button">PLACE ORDER</button>
+                            </div>
+
+                            <div class="main_button2">
+                                <button class="order_from_fav" type="button" id="order_fav">Order From Favourites</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--================================================================END OF ADD TO CART ITEMS=============================================================-->
+    
+            <script src="Scripts/Coffee-Page/store.js"></script>
+
+            <!--============================================BEGINNING OF FOOTER==============================================-->
+            <footer>    
+                <p>GAYATH KODITHUWAKKU</p>
+                <p class="tel">+94 77 489 5900</p>
+
+                <div class="social">
+                    <div class="facebook">
+                        <img src="Images/Footer-Images/fb.svg" alt="facebook logo"/>
+                    </div>
+
+                    <div class="twitter">
+                        <img src="Images/Footer-Images/twitter.svg" alt="twitter logo"/>
+                    </div>
+
+                    <div class="linkid">
+                        <img src="Images/Footer-Images/link.svg" alt="linkeid logo"/>
+                    </div>
+
+                    <div class="insta">
+                        <img src="Images/Footer-Images/instagram.svg" alt="instagram logo"/>
+                    </div>  
+                </div>        
+            </footer>
+            <!--============================================END OF FOOTER======================================================-->
+            <script src="register.js"></script>
+    </body>
+</html>

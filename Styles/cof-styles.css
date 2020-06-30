@@ -1,0 +1,979 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-image: url("Images\ -\ used\ in\ css//cart.jpg");
+    background-size: 1400px;
+    overflow-x: hidden; 
+    background-color: #845933;
+}
+    
+.container {
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+
+/*==================================================BEGINNING OF FOOTER=======================================================*/  
+footer{   
+    width: 100%;
+    height: auto;
+    background-color: #1A2F3A;   
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 0 0px;
+}
+ 
+footer p{
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing:3px;
+    color: white;
+}
+
+.tel{
+    font-size: 16px;
+    font-family: Helvetica;
+    letter-spacing: 3px;
+    margin: -30px 0 0 0px;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    margin: -10px 0 0 170px;
+}
+
+.social img{
+    width: 50%;
+    height: 50%;
+}
+
+.facebook, .twitter, .insta, .linkid{
+    margin: 0px 0 0 -100px;
+}
+
+
+/*==========================================================END OF FOOTER=======================================================*/  
+
+/*====================================================BEGINNING OF NAVIGATION================================================*/
+
+nav{
+    box-sizing: border-box;
+    width: 100%;
+    padding:0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #1A2F3A;   
+    margin: 0px 0 0 0px;
+}
+.nav-links {
+    position: absolute;
+    right: 0px;
+    height: 25vh;
+    top: 7.8vh;
+    background-color: #845933;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    transform: translateX(110%);
+    transition: transform 0.5s ease-in;
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    line-height: 50px;
+    font-size:12px;
+    font-weight: bold;
+    margin: 0px 0 0 0px;
+}
+
+.burger{
+    cursor: pointer;
+    margin: 0px 0 0 0px;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+/*---Dropdown Options----*/
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size:18px;
+    letter-spacing: 2px;    
+    border: none;
+    width: 120px;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    margin: 0px 0 0 65px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #845933;
+    width: 100%;
+    margin: 0px 0 0 20px;
+}
+
+.dropdown-content a{
+    float: none;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+    display: block;
+    margin: 0px 0 0 10px;
+    line-height: 30px;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+    background-color: #A06C3E;
+}
+
+.dropdown .dropdown-content a{
+    margin: 0px 0 0 10px;
+}
+
+/*====================================================END OF NAVIGATION================================================*/
+
+
+/*==============================================================*/
+
+.container4 .left img{
+    width: 100%;
+    height: 200px;
+    margin: 0px 0 0 0px;
+}
+
+.container4 .right{
+    display: flex;
+    flex-direction: column;
+}
+
+.container4 .right p{
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 35px;
+    margin: -150px 0 0 50px;
+    color: white;
+}
+
+
+.container4 .right h4{
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 35px;
+    margin: 0px 0 0 55px;
+    color: white;
+    font-weight: lighter;
+}
+
+    /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 20%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+/* Position the "next button" to the right */
+.next {
+    margin: -6% 0 0 6%;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev{
+    margin: -6% 0 0 0%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.box{
+    box-sizing: border-box;
+    border: 2px solid black;
+    width: 100%;
+    height: 22px;
+    background-color: black;
+    margin: -30px 0 0 0px;
+}
+
+/*The dots/bullets/indicators*/
+.slideshow-container .bullets {
+    margin: -8px 0 0 180px;    
+}
+
+.slideshow-container .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 10px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+            
+.slideshow-container .active, .dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+.slideshow-container .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+
+/*=============================SHOPPING ITEMS======================*/
+
+/*------------------COFFEE TYPE---------------*/
+.coffee_type_select{
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 0 28px;
+}
+
+.coffee_type_select input[type=radio]{
+    margin: 50px 0 0 120px;
+    cursor: pointer;
+}
+/*------------------COFFEE TYPE---------------*/
+
+/*--------------------------------------------*/
+.milk_info{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: auto;
+    width:250px;
+    background-image: url("Images\ -\ used\ in\ css//brown-background.jpg");
+    background-size: 600px;
+    border: 4px solid rgb(51, 33, 0);
+    border-radius: 30px;  
+    margin: 2% 0 0 6%; 
+    letter-spacing: 4px;
+}
+
+.milk_info img{
+    margin: 30px 0 0 10px;
+    width: 220px;
+    height: 180px;
+    border-radius: 15px;
+}
+
+.favourtie_title{
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.favourtie_title h1{
+    margin-top: 80px;
+    letter-spacing: 5px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.milk_title{
+    text-align: center;
+    font-size: 14px;
+}
+/*--------------------------------------------*/
+
+
+/*--------------------------------------------*/
+
+.second_section{
+    box-sizing: border-box;
+    border: 4px solid rgb(51, 33, 0);
+    border-radius: 30px;
+    width: 350px;
+    height: auto;
+    background-image: url("Images\ -\ used\ in\ css//brown-background.jpg");
+    background-size: 900px;
+    margin: 50px 0 0 -11px;
+    text-align: center;
+    padding: 20px;
+}
+/*--------------------------------------------*/
+
+
+/*----------------CUP SIZE--------------*/
+#cup_size{
+    color: black;
+    height: 30px;
+    width: 170px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: 2px solid chocolate;
+}
+
+#cup_size:hover{
+    background-color: chocolate;
+}
+/*----------------CUP SIZE--------------*/
+
+
+
+/*----------------MILK CHOICE--------------*/
+#milk_choice{
+    color: black;
+    height: 30px;
+    width: 170px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: 2px solid chocolate;
+}
+
+#milk_choice:hover{
+    background-color: chocolate;
+}
+/*----------------MILK CHOICE--------------*/
+
+
+
+/*----------------TOPIINGS--------------*/
+#topping_type{
+    color: black;
+    height: 30px;
+    width: 170px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: 2px solid chocolate;
+}
+
+#topping_type:hover{
+    background-color: chocolate;
+}
+/*----------------TOPIINGS--------------*/
+
+
+
+/*----------------SYRUP SHOTS--------------*/
+.per_shots{
+    color: black;
+    height: 30px;
+    width: 170px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 2px solid chocolate;
+    border-radius: 6px;
+}
+
+.per_shots:hover{
+    background-color: chocolate;
+}
+/*----------------SYRUP SHOTS--------------*/
+
+
+/*----------------IMAGES-------------*/
+.simage{
+    margin: 20px 0 0 20px;
+    width: 220px;
+    height: 180px;
+    border-radius: 15px;
+  }
+/*----------------IMAGES-------------*/
+
+
+
+/*=============================SHOPPING ITEMS======================*/
+
+
+
+/*================================BUTTON============================*/
+.main_button {
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    width: auto;
+}
+
+/*----------------PLACE ORDER BUTTON--------------*/
+
+.finalbuttons{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 10px;
+}
+
+.buttonreverse{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: -15px 0 0 38px;
+}
+
+.place_order{
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    margin: -15px 0 0 0px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border: 4px solid rgb(51, 33, 0);
+    background-color: rgb(105, 65, 13);
+    padding: 20px 20px;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.add_to_fav{
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    margin: 0px 0 0 65px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border: 2px solid rgb(51, 33, 0);
+    background-color: rgb(105, 65, 13);
+    padding: 10px 10px;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+.order_from_fav{
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    margin: 0px 0 0 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border: 2px solid rgb(51, 33, 0);
+    background-color: rgb(105, 65, 13);
+    padding: 10px 10px;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.place_order:hover{
+    background-color: rgb(163, 107, 28);
+}
+
+.order_from_fav:hover{
+    background-color: rgb(163, 107, 28);
+}
+
+.add_to_fav:hover{
+    background-color: rgb(163, 107, 28);
+}
+/*----------------PLACE ORDER BUTTON--------------*/
+
+
+/*----------------ADD TO CART BUTTON--------------*/
+.add_to_cart{
+    display: block;
+    margin: 50px 0 0 28px;
+    font-size: 20px;
+    width: 250px;
+    background-color: rgb(105, 65, 13);
+    border-radius: 20px;
+    border: 4px solid rgb(51, 33, 0);
+    padding: .67em .67em;
+    cursor: pointer;
+    color: white;
+}
+
+.add_to_cart:hover{
+    background-color: rgb(163, 107, 28);
+}
+/*----------------ADD TO CART BUTTON--------------*/
+
+
+/*----------------REMOVE ITEM BUTTON--------------*/
+.remove_button{
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    padding: .67em .67em;
+    cursor: pointer;
+    font-size: 12px;
+    margin: -50px 0 0 4px;
+}
+
+.remove_button:hover {
+    background-color: #CC4C4C;
+}
+/*----------------REMOVE ITEM BUTTON--------------*/
+
+
+
+/*=================================CART============================*/
+
+/*----------------ITEMS IN THE CART--------------*/
+.cart_container {
+    width: 350px;
+    margin: 20px 0 0 -10px;
+    padding: 0 1.5em;
+    background-image: url("Images\ -\ used\ in\ css//cart2.jpg");
+    background-size: 900px;   
+    box-sizing: border-box;
+    border: 3px solid black;
+    border-radius: 40px;
+    height: auto;
+}
+
+.cart_container h1{
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.cart_header {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.cart_column {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.cart_row {
+    display: flex;
+}
+
+.cart_row:last-child {
+    border-bottom: 3px solid black;
+}
+
+.cart_row:last-child .cart_column {
+    border: none;
+}
+
+.cart_item {
+    width: 50%;
+    margin: 5px 0 0 -10px;
+}
+/*----------------ITEMS IN THE CART--------------*/
+
+
+
+/*----------------PRICE OF AN ITEM--------------*/
+.cart_price{
+    width: 30%;
+    font-size: 1.0em;
+    color: rgb(233, 233, 233);
+    margin: 5px 0 0 70px;
+}
+
+.price{ 
+    margin: -50px 0 0 20px;
+}
+/*----------------PRICE OF AN ITEM--------------*/
+
+
+
+/*----------------QUANTITY OF AN ITEM--------------*/
+.cart_quantity {
+    width: 40%;
+    margin: 5px 0 0 -5px;
+}
+
+
+.cart_quantity_input {
+    height: 34px;
+    width: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(101, 72, 0);
+    background-color: #eee;
+    color: rgb(26, 26, 26);
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin: -50px 0 0 24px;
+}
+/*----------------QUANTITY OF AN ITEM--------------*/
+
+
+
+/*----------------NAME OF AN ITEM--------------*/
+.cart_item_title {
+    color: rgb(180, 180, 180);
+    margin-left: .1em;
+    font-size: 1.2em;
+}
+/*----------------NAME OF AN ITEM--------------*/
+
+
+
+
+/*----------------WHOLE TOTAL OF THE ITEMS--------------*/
+.cart_total {
+    text-align: end;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.cart_total_title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+    margin-right: 20px;
+}
+
+.cart_total_price {
+    color: white;
+    font-size: 1.1em;
+}
+/*----------------WHOLE TOTAL OF THE ITEMS--------------*/
+/*=================================CART============================*/
+
+
+@media screen and (min-width: 1024px){
+    
+    .nav-links {
+        height: 15vh;
+        width: 20%;
+    }
+    
+    .nav-links a{
+        line-height: 50px;
+        font-size:19px;
+    }
+    
+    .burger{
+        margin: 0px 0 0 900px;
+    }
+        
+    .dropdown .dropbtn {
+        margin: 0px 0 0 50px;
+    }
+    
+    .dropdown-content {
+        margin: 0px 0 0 -18px;
+    }
+
+  
+    /*------------------COFFEE TYPE---------------*/
+    .coffee_type_select{
+        margin: 0px 0 0 360px;
+    }
+    /*------------------COFFEE TYPE---------------*/
+
+    .milk_info{
+        margin: 10px 0 0 10px; 
+    }
+
+    .second_section{
+        margin: 50px 0 0 320px;
+    }
+
+    .cart_container {
+        width: 900px;
+        margin: 50px auto;
+    }
+
+    .place_order{
+        margin: 80px 0 0 330px;
+        margin-bottom: 20px;
+    }
+
+    .price{ 
+        margin: -50px 0 0 80px;
+    }
+    /*----------------PRICE OF AN ITEM--------------*/
+    
+    /*----------------QUANTITY OF AN ITEM--------------*/  
+    .cart_quantity_input {
+        width: 50px;
+        margin-right: 30px;
+    }
+
+    .tel{
+        font-size: 18px;
+        letter-spacing: 4px;
+        margin: -60px 0 0 0px;
+    }
+
+    .social{
+        margin: -10px 0 0 500px;
+    }
+
+    .container4 .left img{
+        width: 100%;
+        height: 350px;
+    }
+
+    .container4 .right p{
+        font-size: 40px;
+        margin: -24% 0 0 10%;
+    }
+
+    .container4 .right h4{
+        font-size: 20px;
+        margin: 20px 0 0 160px;
+    }
+
+    .next {
+        margin: 0% 0 0 6%;
+    }
+
+    .prev{
+        margin: 0% 0 0 0%;
+    }
+
+    .slideshow-container .bullets {
+        margin: -10px 0 0 500px;    
+    }
+
+        /*----------------place order--------------*/
+
+    .finalbuttons{
+        display: flex;
+        flex-direction: row;
+        margin: 100px 0 0 125px;
+    }
+
+    .buttonreverse{
+        display: flex;
+        flex-direction: row;
+        margin: 0px 0 0 20px;
+    }
+
+    .place_order{
+        margin: 0px 0 0 0px;
+    }
+    
+    .add_to_fav{
+
+        margin: 20px 0 0 0px;
+    }
+
+    .order_from_fav{
+        margin: 20px 0 0 20px;
+    }
+        /*----------------place order--------------*/
+}
+
+
+@media screen and (min-width: 1300px){  
+
+    .social{
+        margin: 0% 0 0 49%;
+    }
+    
+    nav{
+        min-height: 15vh;
+    }
+    
+    .nav-links {
+        position: absolute;
+        height: 25vh;
+        top: 15vh;
+        width: 15%;
+    }
+    
+    .nav-links a{
+        font-size:16px;
+    }
+    
+    .burger{
+        cursor: pointer;
+        margin: 0% 0 0 90%;
+    }
+
+    .dropdown-content {
+        margin: 0px 0 0 -16px;
+    }
+    
+    .dropdown:hover .dropdown-content{
+        display: block;
+        background-color: #A06C3E;
+    }
+
+    .container4 .left img{
+        width: 100%;
+        height: 450px;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        top: 50%;
+    }
+
+    .next {
+        margin: -2% 0 0 6%;
+    }
+
+    .prev{
+        margin: -2% 0 0 0%;
+    }
+
+    .slideshow-container .bullets {
+        margin: -10px 0 0 660px;    
+    }
+
+    .coffee_type_select{
+        display: flex;
+        flex-direction: row;
+        margin: 0px 0 0 -5px;
+    }
+
+    .milk_info{
+
+        margin: 0px 0 0 10px; 
+    }
+
+    .second_section{
+        width: 500px;
+        margin: 50px 0 0 400px;
+    }
+
+    .add_to_cart{
+        margin: 50px 0 0 110px;
+    }    
+    
+    .cart_header {
+        font-size: 1.25em;
+    }
+    
+    .cart_column {
+        display: flex;
+        align-items: center;
+        border-bottom: 3px solid black;
+        margin-right: 1.5em;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        letter-spacing: 2px;
+    }
+    /*----------------ITEMS IN THE CART--------------*/
+    
+    
+    
+    /*----------------PRICE OF AN ITEM--------------*/
+    .cart_price {
+        width: 20%;
+        margin: 5px 0 0 30px;
+    }
+
+    .price{ 
+        margin: -50px 0 0 60px;
+    }
+    /*----------------PRICE OF AN ITEM--------------*/
+    
+    
+    
+    /*----------------QUANTITY OF AN ITEM--------------*/
+    .cart_quantity {
+        width: 35%;
+        margin: 5px 0 0 0px;
+    }
+    /*----------------QUANTITY OF AN ITEM--------------*/
+       
+    
+    /*----------------NAME OF AN ITEM--------------*/
+    .cart_item_title {
+        margin-left: .5em;
+    }
+    /*----------------NAME OF AN ITEM--------------*/
+
+
+    /*----------------place order--------------*/
+
+    .finalbuttons{
+        display: flex;
+        flex-direction: row;
+        margin: 100px 0 0 125px;
+    }
+
+    .buttonreverse{
+        display: flex;
+        flex-direction: row;
+        margin: 0px 0 0 20px;
+    }
+
+    .place_order{
+        margin: 0px 0 0 0px;
+    }
+    
+    .add_to_fav{
+
+        margin: 20px 0 0 0px;
+    }
+
+    .order_from_fav{
+        margin: 20px 0 0 20px;
+    }
+    /*----------------place order--------------*/
+
+
+}
